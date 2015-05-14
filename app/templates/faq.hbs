@@ -2,7 +2,8 @@
 
 <h1>Welcome to the FAQ page</h1>
  {{#each}}
- <h2>{{question}}</h2>
- <h3>{{minianswer}}</h3><br />
+   <h2>{{question}}</h2>
+   <h3>{{minianswer}}</h3>
+   {{star-rating howmany=liked}}
+   <br />
  {{/each}}
-
