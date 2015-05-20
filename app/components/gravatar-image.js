@@ -5,6 +5,10 @@ export default Ember.Component.extend({
   size: 120,
   email: '',
 
+  gravatarLabel: function() {
+    return this.get('email')
+  }.property('email'),
+  
   gravatarUrl: function() {
     var email = this.get('email'),
         size = this.get('size');
