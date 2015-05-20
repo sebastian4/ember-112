@@ -3,11 +3,11 @@
     {{#if overDiv}}
             <div>You are over div now!</div>
     {{/if}}
-    <img class="img-circle img-responsive img-center" {{bind-attr src=image}} alt="">
-    <h3 >{{name}}
-        <small>{{title}}</small>
-        <small>{{yield}}</small>
-    </h3>
+    <img class="img-circle img-responsive img-center" {{bind-attr src=image}} alt="" {{action "clicked" on="click"}}>
+    <h3>{{name}}</h3>
+    <small>{{title}}</small> | <small>{{profileIndex}}</small> <br/>
+    <small>{{yield}}</small>
+
     <a {{bind-attr href=twitter}}>Twitter</a>
     </div>
 </div>

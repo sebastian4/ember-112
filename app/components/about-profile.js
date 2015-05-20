@@ -4,13 +4,18 @@ export default Ember.Component.extend({
 
   overDiv: false,
 
+  profileIndex: 0,
+
   actions: {
-    
+
      over: function() {
-            this.toggleProperty('overDiv');
+       this.toggleProperty('overDiv');
      },
      out: function() {
-            this.toggleProperty('overDiv');
+       this.toggleProperty('overDiv');
+     },
+     clicked: function() {
+       this.set("profileIndex",this.get("profileIndex")+1);
      }
 
   }
